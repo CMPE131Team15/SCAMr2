@@ -14,9 +14,15 @@ namespace SCAMr2.Models
 		public string Year { get; set; }
 		public string Email { get; set; }
 		public string Phone { get; set; }
+		//NEED TO SERIALIZE/DESERIALIZE
+		public string UncompletedCourses { get; set; }
+		public string CurrentCourses { get; set; }
+		public string Friends { get; set; }
+		/*
 		public List<string> UncompletedCourses { get; set; }
 		public List<string> CurrentCourses { get; set; }
 		public List<int> Friends { get; set; }
+		*/
 	}
 
 	public class StudentDBContext : DbContext
